@@ -7,6 +7,10 @@ const root = fileURLToPath(new URL('.', import.meta.url))
 export default defineConfig({
   root: '.',
   publicDir: 'public',
+  server: {
+    host: true,
+    allowedHosts: true,
+  },
   build: {
     rollupOptions: {
       input: {
