@@ -219,7 +219,7 @@ p {
   gap: 0.55rem;
   min-height: 3rem;
   padding: 0.85rem 1.45rem;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 0.92rem;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -277,7 +277,22 @@ p {
 .btn-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.text-link {
+  color: var(--text-on-dark);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+  transition: text-decoration-color 0.25s ease, opacity 0.25s ease;
+}
+
+.text-link:hover {
+  text-decoration-color: currentColor;
 }
 
 /* Header */
@@ -354,7 +369,7 @@ p {
 
 .nav-link {
   padding: 0.55rem 0.8rem;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 0.9rem;
   color: var(--text-soft);
   transition:
@@ -370,6 +385,10 @@ p {
 
 .header-cta {
   display: none;
+}
+
+.nav-cta {
+  margin-left: 0.35rem;
 }
 
 .menu-toggle {
@@ -407,12 +426,6 @@ p {
 
 .menu-toggle span::after {
   top: 5px;
-}
-
-@media (min-width: 980px) {
-  .header-cta {
-    display: inline-flex;
-  }
 }
 
 @media (max-width: 979px) {
@@ -520,7 +533,7 @@ p {
   align-items: center;
   gap: 0.4rem;
   padding: 0.55rem 0.9rem;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 0.82rem;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -660,7 +673,7 @@ p {
   top: 1rem;
   left: 1rem;
   padding: 0.45rem 0.75rem;
-  border-radius: 999px;
+  border-radius: 12px;
   font-size: 0.75rem;
   background: rgba(15, 26, 22, 0.45);
   color: #fff;

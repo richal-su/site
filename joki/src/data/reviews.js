@@ -5,8 +5,7 @@ export const reviews = [
     trip: 'Пара · 3 ночи',
     rating: 5,
     text: 'Приехали «просто отдохнуть» — уехали с ощущением, что впервые за год выдохнули. Костёр у Лампи, туман над озером утром, завтрак без спешки. Хотим вернуться осенью.',
-    avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
+    avatar: '/images/avatar-1.jpg',
   },
   {
     id: 2,
@@ -14,8 +13,7 @@ export const reviews = [
     trip: 'Семья · 4 ночи',
     rating: 5,
     text: 'С двумя детьми в Усве было идеально: место для игр, тихие тропы, никаких «нельзя бегать». Ресторан адаптировал меню — редкость. Бронировали через сайт, в Telegram сразу пришёл статус брони.',
-    avatar:
-      'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80',
+    avatar: '/images/avatar-2.jpg',
   },
   {
     id: 3,
@@ -23,8 +21,7 @@ export const reviews = [
     trip: 'Пара · 2 ночи',
     rating: 5,
     text: 'Дизайн сайта совпал с местом: спокойно, современно, без лишнего. На месте — тёмный лес, запах хвои, вода в двух шагах. Сауна и ужин у костра — must.',
-    avatar:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
+    avatar: '/images/avatar-3.jpg',
   },
   {
     id: 4,
@@ -32,7 +29,6 @@ export const reviews = [
     trip: 'Пара · 5 ночей',
     rating: 4,
     text: 'Очень атмосферно. Единственное — добирались дольше, чем думали (это Карелия). Зато тишина абсолютная. Пакет «Выходные у костра» окупился с первой ночи.',
-    avatar:
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
+    avatar: '/images/avatar-4.jpg',
   },
 ]

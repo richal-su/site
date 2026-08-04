@@ -49,9 +49,8 @@ export function initLayout({ darkHero = false } = {}) {
             return `<a class="nav-link${active}" href="${link.href}">${link.label}</a>`
           })
           .join('')}
-        <a class="btn btn-primary" href="${base}booking.html">Забронировать</a>
+        <a class="btn btn-primary nav-cta" href="${base}booking.html">Забронировать</a>
       </nav>
-      <a class="btn btn-primary header-cta" href="${base}booking.html">Забронировать</a>
     </div>
   `
 
