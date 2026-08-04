@@ -9,8 +9,8 @@ export const rooms = [
     capacity: 2,
     area: 28,
     priceFrom: 8900,
-    image: '/images/room-honka.jpg',
-    gallery: ['/images/room-honka.jpg', '/images/bedroom.jpg', '/images/forest-path.jpg'],
+    image: '/images/cabin-honka.jpg',
+    gallery: ['/images/cabin-honka.jpg', '/images/interior-attic.jpg', '/images/fog-pines.jpg'],
     description:
       'Номер в окружении вековых сосен. Тёплый свет, дерево, панорамное окно во двор отеля — место, где хочется замедлиться вдвоём.',
     amenities: [
@@ -32,8 +32,8 @@ export const rooms = [
     capacity: 4,
     area: 46,
     priceFrom: 12900,
-    image: '/images/room-usva.jpg',
-    gallery: ['/images/room-usva.jpg', '/images/room-alt.jpg', '/images/pine-mist.jpg'],
+    image: '/images/cabin-usva.jpg',
+    gallery: ['/images/cabin-usva.jpg', '/images/cabin-aframe.jpg', '/images/mist-conifers.jpg'],
     description:
       'Просторный номер для семьи: две зоны сна, игровая ниша для детей и вид на хвойный склон. Утва — «туман» по-фински: утро здесь начинается мягко.',
     amenities: [
@@ -55,8 +55,8 @@ export const rooms = [
     capacity: 2,
     area: 38,
     priceFrom: 15900,
-    image: '/images/room-lampi.jpg',
-    gallery: ['/images/room-lampi.jpg', '/images/atmosphere-lake.jpg', '/images/campfire.jpg'],
+    image: '/images/cabin-lampi.jpg',
+    gallery: ['/images/cabin-lampi.jpg', '/images/river-rocks.jpg', '/images/evening-cabin.jpg'],
     description:
       'Премиальный номер у кромки озера. Терраса с костровой чашей, закаты над водой и приватность — для тех, кто едет за настоящей Карелией.',
     amenities: [
