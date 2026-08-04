@@ -1,7 +1,7 @@
 {
-  "name": "tulenranta",
+  "name": "joki",
   "version": "1.0.0",
-  "description": "Туленранта — эко-отель в Карелии (portfolio MVP)",
+  "description": "Йоки — эко-отель в Карелии (portfolio MVP)",
   "private": true,
   "type": "module",
   "scripts": {

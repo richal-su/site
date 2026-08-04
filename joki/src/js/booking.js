@@ -1,7 +1,7 @@
 import { rooms, formatPrice, getRoomBySlug } from '../data/rooms.js'
 
-const BOT_USERNAME = 'TulenrantaBot'
-const STORAGE_KEY = 'tulenranta_booking'
+const BOT_USERNAME = 'JokiBot'
+const STORAGE_KEY = 'joki_booking'
 
 function nightsBetween(checkIn, checkOut) {
   const a = new Date(checkIn)
@@ -16,7 +16,7 @@ function generateBookingCode() {
   for (let i = 0; i < 4; i += 1) {
     code += alphabet[Math.floor(Math.random() * alphabet.length)]
   }
-  return `TLR-${code}`
+  return `JOKI-${code}`
 }
 
 /** Future FastAPI contract shape */
@@ -220,7 +220,7 @@ export function initSuccessPage() {
     booking = null
   }
 
-  const code = params.get('code') || booking?.code || 'TLR-DEMO'
+  const code = params.get('code') || booking?.code || 'JOKI-DEMO'
   if (booking && params.get('code') && booking.code !== params.get('code')) {
     booking = { ...booking, code }
   }

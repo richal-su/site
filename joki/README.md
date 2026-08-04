@@ -1,8 +1,8 @@
-# Туленранта
+# Йоки
 
-Эко-отель у озера в Карелии — портфолио-проект №1 (сайт).
+Эко-отель у реки в Карелии — портфолио-проект №1 (сайт).
 
-**Туленранта** = фин. *tuli* (огонь/костёр) + *ranta* (берег).
+**Йоки** = фин. *joki* («река»).
 
 ## Стек
 
@@ -13,7 +13,7 @@
 ## Запуск
 
 ```bash
-cd tulenranta
+cd joki
 npm install
 npm run dev
 ```
@@ -37,6 +37,6 @@ npm run preview
 
 После брони:
 
-`https://t.me/TulenrantaBot?start=booking_<CODE>`
+`https://t.me/JokiBot?start=booking_<CODE>`
 
-Payload брони сохраняется в `localStorage` (`tulenranta_booking`) в формате, совместимом с будущим `POST /api/bookings`.
+Payload брони сохраняется в `localStorage` (`joki_booking`) в формате, совместимом с будущим `POST /api/bookings`.

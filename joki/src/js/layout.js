@@ -1,6 +1,8 @@
-const FIRE_ICON = `
+const RIVER_ICON = `
 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-  <path d="M12 3c1.5 3 1 5.5-.5 7 2.5-.2 4.5 1.4 4.5 4.2 0 3-2.4 5.3-5.5 5.3S5 17.2 5 14.2c0-2.6 1.4-4.2 2.6-5.2C6.8 6.8 9.2 4.4 12 3z" fill="currentColor"/>
+  <path d="M3 8.5c2.2-2 4.4-2 6.5 0s4.4 2 6.5 0 4.4-2 6.5 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M3 12.5c2.2-2 4.4-2 6.5 0s4.4 2 6.5 0 4.4-2 6.5 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M3 16.5c2.2-2 4.4-2 6.5 0s4.4 2 6.5 0 4.4-2 6.5 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 </svg>`
 
 function pathPrefix() {
@@ -33,9 +35,9 @@ export function initLayout({ darkHero = false } = {}) {
   header.className = `site-header${darkHero ? ' on-dark' : ''}`
   header.innerHTML = `
     <div class="header-inner">
-      <a class="brand" href="${base}index.html" aria-label="Туленранта — на главную">
-        <span class="brand-mark">${FIRE_ICON}</span>
-        <span class="brand-name">Туленранта</span>
+      <a class="brand" href="${base}index.html" aria-label="Йоки — на главную">
+        <span class="brand-mark">${RIVER_ICON}</span>
+        <span class="brand-name">Йоки</span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
         <span></span>
@@ -59,10 +61,10 @@ export function initLayout({ darkHero = false } = {}) {
     <div class="container footer-grid">
       <div class="footer-brand">
         <div class="brand">
-          <span class="brand-mark">${FIRE_ICON}</span>
-          <span class="brand-name">Туленранта</span>
+          <span class="brand-mark">${RIVER_ICON}</span>
+          <span class="brand-name">Йоки</span>
         </div>
-        <p>Эко-отель у озера в Карелии. Хвойный лес, туманные утра и вечера у костра.</p>
+        <p>Эко-отель у реки в Карелии. Хвойный лес, туманные утра и тихий берег.</p>
       </div>
       <div class="footer-col">
         <h3>Навигация</h3>
@@ -76,15 +78,15 @@ export function initLayout({ darkHero = false } = {}) {
       <div class="footer-col">
         <h3>Контакты</h3>
         <ul>
-          <li>Респ. Карелия, берег оз. Сямозеро</li>
+          <li>Респ. Карелия, берег реки Шуя</li>
           <li><a href="tel:+78122990011">+7 (812) 299-00-11</a></li>
-          <li><a href="mailto:stay@tulenranta.ru">stay@tulenranta.ru</a></li>
+          <li><a href="mailto:stay@joki.hotel">stay@joki.hotel</a></li>
           <li><a href="${base}case.html">Кейс проекта</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© ${new Date().getFullYear()} Туленранта. Вымышленный отель для портфолио.</span>
+      <span>© ${new Date().getFullYear()} Йоки. Вымышленный отель для портфолио.</span>
       <span>Подготовка к Telegram-боту бронирования</span>
     </div>
   `
