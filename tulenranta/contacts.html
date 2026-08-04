@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — Туленранта</title>
+    <meta name="description" content="Контакты и карта эко-отеля Туленранта в Карелии." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page="contacts">
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Контакты</p>
+          <h1>Как нас найти</h1>
+          <p class="lead">Карелия, берег Сямозера. Ниже — карта и способы связи.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container contacts-grid">
+          <div class="contact-card reveal">
+            <h2 class="display" style="font-size: 2rem">Туленранта</h2>
+            <p>Республика Карелия<br />берег оз. Сямозеро<br />(вымышленный адрес для портфолио)</p>
+            <p>
+              <a href="tel:+78122990011">+7 (812) 299-00-11</a><br />
+              <a href="mailto:stay@tulenranta.ru">stay@tulenranta.ru</a>
+            </p>
+            <p style="color: var(--text-soft)">Заезд с 15:00 · Выезд до 12:00</p>
+            <a class="btn btn-primary" href="./booking.html">Забронировать</a>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <iframe
+              class="map-frame"
+              title="Карта: Сямозеро, Карелия"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://yandex.ru/map-widget/v1/?ll=32.790000%2C61.920000&z=10&l=map"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

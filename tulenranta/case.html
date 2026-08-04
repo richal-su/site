@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кейс — Туленранта</title>
+    <meta name="description" content="Портфолио-кейс: сайт эко-отеля Туленранта с подготовкой к Telegram-боту бронирования." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page="case">
+    <main>
+      <section class="page-hero">
+        <div class="container case-content">
+          <p class="eyebrow">Portfolio case</p>
+          <h1>Туленранта</h1>
+          <p class="lead">Вымышленный эко-отель в Карелии. Цель — показать современный сайт с сильной атмосферой и архитектурой под Telegram-бронирование.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container case-content">
+          <div>
+            <h2>Problem</h2>
+            <p>Нужен портфолио-проект №1: полноценный отельный сайт (RU) для пар и семей, с имитацией брони и понятным мостом в Telegram-ЛК.</p>
+          </div>
+          <div>
+            <h2>Solution</h2>
+            <ul>
+              <li>Бренд Туленранта (фин. tuli + ranta — «берег костра»).</li>
+              <li>Атмосфера Карелии: хвойный лес, туман, вода; светлая UI-база + liquid glass.</li>
+              <li>Мультистраничный Vite-сайт: номера, услуги, акции, отзывы, FAQ, контакты, бронь.</li>
+              <li>Booking wizard → localStorage payload → deep-link <code>t.me/TulenrantaBot?start=booking_CODE</code>.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Stack</h2>
+            <div class="table-like">
+              <div><strong>Frontend</strong><span>Vite + HTML/SCSS/JS</span></div>
+              <div><strong>Backend</strong><span>MVP без backend; контракт под FastAPI</span></div>
+              <div><strong>Интеграция</strong><span>Telegram deep-link (этап 2 — бот + API)</span></div>
+              <div><strong>Хостинг</strong><span>Netlify / Vercel (статика)</span></div>
+            </div>
+          </div>
+          <div>
+            <h2>Result</h2>
+            <p>MVP готов к показу в портфолио: сильный визуальный характер, рабочий сценарий брони и закладка под Telegram без переделки архитектуры.</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="./index.html">Открыть сайт</a>
+            <a class="btn btn-glass" href="./booking.html">Сценарий брони</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
