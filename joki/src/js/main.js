@@ -37,12 +37,37 @@ if (page === 'home' || page === 'rooms') {
       )
       .join('')
   }
+
+  const editorial = document.querySelector('[data-rooms-editorial]')
+  if (editorial) {
+    editorial.innerHTML = rooms
+      .map(
+        (room, index) => `
+      <a class="room-row reveal reveal-delay-${Math.min(index, 3)}" href="./rooms/${room.slug}.html">
+        <div class="room-row-media">
+          <img src="${room.image}" alt="Номер ${room.name}" loading="lazy" width="1200" height="900" />
+        </div>
+        <div class="room-row-copy">
+          <p class="eyebrow">${room.type}</p>
+          <h3>${room.name}</h3>
+          <p>${room.description}</p>
+          <div class="meta-line">
+            <span>до ${room.capacity} гостей</span>
+            <span>${room.area} м²</span>
+            <span class="price">от ${formatPrice(room.priceFrom)} / ночь</span>
+          </div>
+          <span class="text-link">Подробнее →</span>
+        </div>
+      </a>`,
+      )
+      .join('')
+  }
 }
 
 if (page === 'home' || page === 'reviews') {
   const list = document.querySelector('[data-reviews]')
   if (list) {
-    const items = page === 'home' ? reviews.slice(0, 2) : reviews
+    const items = page === 'home' ? reviews.slice(0, 3) : reviews
     list.innerHTML = items
       .map(
         (review) => `
