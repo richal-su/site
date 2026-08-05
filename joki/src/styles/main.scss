@@ -38,7 +38,8 @@
   --shadow-glass: 0 8px 32px rgba(15, 26, 22, 0.1);
 
   --font-display: 'Unbounded', 'Arial Narrow', sans-serif;
-  --font-body: 'Commissioner', 'Segoe UI', sans-serif;
+  --font-body: 'Geologica', 'Segoe UI', sans-serif;
+  --font-ui: 'Geologica', 'Segoe UI', sans-serif;
 
   --container: 1180px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
@@ -155,9 +156,10 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
+  font-family: var(--font-ui);
   font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--moss);
 }
@@ -190,8 +192,8 @@ p {
 .section-head h2 {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 5vw, 4rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.045em;
   line-height: 1.02;
 }
 
@@ -221,9 +223,10 @@ p {
   min-height: 3rem;
   padding: 0.85rem 1.45rem;
   border-radius: 12px;
+  font-family: var(--font-ui);
   font-size: 0.92rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   transition:
     transform 0.35s var(--ease-out),
     background 0.35s var(--ease-soft),
@@ -371,7 +374,10 @@ p {
 .nav-link {
   padding: 0.55rem 0.8rem;
   border-radius: 12px;
+  font-family: var(--font-ui);
   font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   color: var(--text-soft);
   transition:
     color 0.25s ease,
@@ -919,8 +925,8 @@ p {
 .page-hero h1 {
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 7vw, 5rem);
-  font-weight: 500;
-  letter-spacing: -0.035em;
+  font-weight: 600;
+  letter-spacing: -0.05em;
   line-height: 0.95;
   margin-top: 0.75rem;
 }
