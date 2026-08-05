@@ -38,8 +38,8 @@
   --shadow-glass: 0 8px 32px rgba(15, 26, 22, 0.1);
 
   --font-display: 'Unbounded', 'Arial Narrow', sans-serif;
-  --font-body: 'Geologica', 'Segoe UI', sans-serif;
-  --font-ui: 'Geologica', 'Segoe UI', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-ui: 'IBM Plex Sans', 'Segoe UI', sans-serif;
 
   --container: 1180px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
@@ -157,9 +157,9 @@ p {
   align-items: center;
   gap: 0.55rem;
   font-family: var(--font-ui);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--moss);
 }
@@ -220,13 +220,13 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  min-height: 3rem;
-  padding: 0.85rem 1.45rem;
-  border-radius: 12px;
+  min-height: 2.85rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
   font-family: var(--font-ui);
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0;
   transition:
     transform 0.35s var(--ease-out),
     background 0.35s var(--ease-soft),
@@ -286,9 +286,11 @@ p {
 }
 
 .text-link {
+  font-family: var(--font-ui);
   color: var(--text-on-dark);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
+  letter-spacing: 0;
   text-decoration: underline;
   text-underline-offset: 0.28em;
   text-decoration-color: rgba(255, 255, 255, 0.45);
@@ -372,12 +374,12 @@ p {
 }
 
 .nav-link {
-  padding: 0.55rem 0.8rem;
-  border-radius: 12px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
   font-family: var(--font-ui);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   color: var(--text-soft);
   transition:
     color 0.25s ease,
@@ -541,7 +543,10 @@ p {
   gap: 0.4rem;
   padding: 0.55rem 0.9rem;
   border-radius: 12px;
+  font-family: var(--font-ui);
   font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(12px);
@@ -1028,7 +1033,10 @@ p {
 }
 
 .wizard-step-label {
+  font-family: var(--font-ui);
   font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   color: var(--text-soft);
   padding-bottom: 0.55rem;
   border-bottom: 2px solid var(--line);
@@ -1077,8 +1085,10 @@ p {
 }
 
 .field label {
+  font-family: var(--font-ui);
   font-size: 0.88rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .field input,
@@ -1296,8 +1306,10 @@ p {
 }
 
 .footer-col h3 {
+  font-family: var(--font-ui);
   font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-bottom: 0.85rem;
   color: rgba(255, 255, 255, 0.55);
