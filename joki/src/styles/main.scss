@@ -37,8 +37,8 @@
   --shadow-soft: 0 20px 50px rgba(15, 26, 22, 0.12);
   --shadow-glass: 0 8px 32px rgba(15, 26, 22, 0.1);
 
-  --font-display: 'Fraunces', 'Times New Roman', serif;
-  --font-body: 'Sora', system-ui, sans-serif;
+  --font-display: 'Unbounded', 'Arial Narrow', sans-serif;
+  --font-body: 'Commissioner', 'Segoe UI', sans-serif;
 
   --container: 1180px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
@@ -146,8 +146,9 @@ p {
 .display {
   font-family: var(--font-display);
   font-weight: 500;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.045em;
   line-height: 0.95;
+  text-transform: none;
 }
 
 .eyebrow {
@@ -357,8 +358,8 @@ p {
 .brand-name {
   font-family: var(--font-display);
   font-size: 1.35rem;
-  font-weight: 500;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.04em;
 }
 
 .nav {
@@ -512,9 +513,9 @@ p {
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(3.4rem, 9vw, 7.2rem);
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 0.92;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
 }
 
 .hero .lead {
