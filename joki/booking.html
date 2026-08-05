@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бронирование — Йоки</title>
+    <meta name="description" content="Забронируйте номер в Йоки. После подтверждения откроется личный кабинет в Telegram." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page="booking">
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Бронирование</p>
+          <h1>Четыре шага до реки</h1>
+          <p class="lead">Имитация брони для портфолио. Данные сохраняются локально и готовят deep-link в Telegram-бот.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="wizard" data-booking>
+            <div class="wizard-progress" aria-label="Прогресс бронирования">
+              <div class="wizard-step-label is-active" data-step-label>Даты</div>
+              <div class="wizard-step-label" data-step-label>Номер</div>
+              <div class="wizard-step-label" data-step-label>Гости</div>
+              <div class="wizard-step-label" data-step-label>Подтверждение</div>
+            </div>
+
+            <div class="wizard-panel is-active" data-step>
+              <h2 class="display" style="font-size: 1.8rem">Когда приедете?</h2>
+              <div class="form-grid two">
+                <div class="field">
+                  <label for="checkIn">Заезд</label>
+                  <input id="checkIn" type="date" required />
+                  <span class="error"></span>
+                </div>
+                <div class="field">
+                  <label for="checkOut">Выезд</label>
+                  <input id="checkOut" type="date" required />
+                  <span class="error"></span>
+                </div>
+              </div>
+              <div class="wizard-actions">
+                <span></span>
+                <button class="btn btn-primary" type="button" data-next>Далее</button>
+              </div>
+            </div>
+
+            <div class="wizard-panel" data-step>
+              <h2 class="display" style="font-size: 1.8rem">Выберите номер</h2>
+              <div class="form-grid" data-room-options></div>
+              <div class="wizard-actions">
+                <button class="btn btn-glass" type="button" data-prev>Назад</button>
+                <button class="btn btn-primary" type="button" data-next>Далее</button>
+              </div>
+            </div>
+
+            <div class="wizard-panel" data-step>
+              <h2 class="display" style="font-size: 1.8rem">Гости и контакты</h2>
+              <div class="form-grid two">
+                <div class="field">
+                  <label for="adults">Взрослые</label>
+                  <select id="adults">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                  <span class="error"></span>
+                </div>
+                <div class="field">
+                  <label for="children">Дети</label>
+                  <select id="children">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                  <span class="error"></span>
+                </div>
+                <div class="field">
+                  <label for="name">Имя</label>
+                  <input id="name" type="text" autocomplete="name" placeholder="Анна" />
+                  <span class="error"></span>
+                </div>
+                <div class="field">
+                  <label for="phone">Телефон</label>
+                  <input id="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" />
+                  <span class="error"></span>
+                </div>
+                <div class="field" style="grid-column: 1 / -1">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" autocomplete="email" placeholder="you@email.ru" />
+                  <span class="error"></span>
+                </div>
+              </div>
+              <div class="wizard-actions">
+                <button class="btn btn-glass" type="button" data-prev>Назад</button>
+                <button class="btn btn-primary" type="button" data-next>К подтверждению</button>
+              </div>
+            </div>
+
+            <div class="wizard-panel" data-step>
+              <h2 class="display" style="font-size: 1.8rem">Проверьте бронь</h2>
+              <div class="summary-box" data-summary></div>
+              <div class="wizard-actions">
+                <button class="btn btn-glass" type="button" data-prev>Назад</button>
+                <button class="btn btn-primary" type="button" data-submit>Подтвердить бронь</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

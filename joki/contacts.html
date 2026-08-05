@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — Йоки</title>
+    <meta name="description" content="Контакты и карта эко-отеля Йоки в Карелии." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-page="contacts">
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Контакты</p>
+          <h1>Как нас найти</h1>
+          <p class="lead">Карелия, берег реки Шуя. Ниже — карта и способы связи.</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container contacts-grid">
+          <div class="contact-card reveal">
+            <h2 class="display" style="font-size: 2rem">Йоки</h2>
+            <p>Республика Карелия<br />берег реки Шуя<br />(вымышленный адрес для портфолио)</p>
+            <p>
+              <a href="tel:+78122990011">+7 (812) 299-00-11</a><br />
+              <a href="mailto:stay@joki.hotel">stay@joki.hotel</a>
+            </p>
+            <p style="color: var(--text-soft)">Заезд с 15:00 · Выезд до 12:00</p>
+            <a class="btn btn-primary" href="./booking.html">Забронировать</a>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <iframe
+              class="map-frame"
+              title="Карта: река Шуя, Карелия"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://yandex.ru/map-widget/v1/?ll=34.350000%2C61.800000&z=10&l=map"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
